@@ -5,8 +5,8 @@ import App from './App.jsx'
 import './index.css'
 
 import Home from './pages/home/Home.jsx'
-import About from './pages/about.jsx'
-import Hobbies from './pages/hobbies.jsx'
+import About from './pages/About.jsx'
+import Hobbies from './pages/Hobbies.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
 import ContentPage from './pages/ContentPage';
 
