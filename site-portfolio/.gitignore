@@ -1,6 +1,6 @@
 
 img/
-*.glb
+3d/
 # Logs
 logs
 *.log
