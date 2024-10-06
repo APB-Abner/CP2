@@ -1,10 +1,10 @@
-import Espelho from '../assets/img/espelho.jpg'
-import Fagote from '../assets/img/fagote.jpeg'
-import Fo from '../assets/img/Ebaa.jpeg'
-import Pintura from '../assets/img/pintura.jpeg'
-import Vida from '../assets/img/momo.jpeg'
-import Desenho from '../assets/img/desenho.jpeg'
-import Cur from '../assets/img/amamos_sono.jpg'
+import Espelho from '../assets/espelho.jpg'
+import Fagote from '../assets/fagote.jpeg'
+import Fo from '../assets/Ebaa.jpeg'
+import Pintura from '../assets/pintura.jpeg'
+import Vida from '../assets/momo.jpeg'
+import Desenho from '../assets/desenho.jpeg'
+import Cur from '../assets/amamos_sono.jpg'
 import { Link } from 'react-router-dom'
 
 const callouts = [

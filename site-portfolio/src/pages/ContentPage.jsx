@@ -2,11 +2,11 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 // Importar suas imagens
-import Fagote from '../assets/img/fagote.jpeg'
-import Fo from '../assets/img/Ebaa.jpeg'
-import Pintura from '../assets/img/pintura.jpeg'
-import Desenho from '../assets/img/desenho.jpeg'
-import Espelho from '../assets/img/espelho.jpg'
+import Fagote from '../assets/fagote.jpeg'
+import Fo from '../assets/Ebaa.jpeg'
+import Pintura from '../assets/pintura.jpeg'
+import Desenho from '../assets/desenho.jpeg'
+import Espelho from '../assets/espelho.jpg'
 
 // Configurar as informações de cada categoria
 const categoryData = {

@@ -1,4 +1,4 @@
-import Eu from "../assets/img/eu.jpg"
+import Eu from "../assets/eu.jpg"
 
 
 function About() {
