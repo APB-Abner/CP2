@@ -66,9 +66,9 @@ export default function Header() {
     return (
         <Disclosure as="nav" className="bg-gray-800">
             <div className="row mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div className=" flex h-16 items-center justify-between">
-                    <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        {/* Mobile menu button*/}
+                <div className="d-flex h-16 items-center sm:justify-between">
+                    <div className="inset-y-0 left-2 flex max-h-max items-center sm:hidden">
+                        {/* Mobile menu button */}
                         <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                             <span className="absolute -inset-0.5" />
                             <span className="sr-only">Open main menu</span>
@@ -76,26 +76,18 @@ export default function Header() {
                             <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
                         </DisclosureButton>
                     </div>
-                    <div className="d-flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="col-4 md:col-4 flex flex-shrink-0 items-center">
-                            <img
-                                alt="Abner"
-                                src="logo.svg"
-                                className="h-8 w-auto"
-                            />
-                        </div>
-                        <div className="col-4 hidden sm:ml-6 sm:block">
-                            <FlyMenu className="flex space-x-4" navigation={navigation} solutions={solutions} callsToAction={callsToAction} />
+                    <div className="flex flex-shrink-0 items-center justify-center">
+                        <img
+                            alt="Abner"
+                            src="logo.svg"
+                            className="h-8 w-auto"
+                        />
+                        <div className="hidden sm:ml-12 sm:flex sm:items-center sm:justify-end">
+                            <FlyMenu className="flex space-x-6" navigation={navigation} solutions={solutions} callsToAction={callsToAction} />
                         </div>
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button
-                            type="button"
-                            className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <span className="absolute -inset-1.5" />
-                            <span className="sr-only">View notifications</span>
-                            <BellIcon aria-hidden="true" className="h-6 w-6" />
-                        </button>
+
 
                         {/* Profile dropdown 
                         <Menu as="div" className="relative ml-3">
