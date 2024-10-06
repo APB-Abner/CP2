@@ -1,5 +1,6 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -14,15 +15,15 @@ export default function FlyMenu({ solutions = [], callsToAction = [], navigation
                 <Popover key={item.name} className="relative">
                     <div className="inline-flex items-center">
                         {/* Link para a página */}
-                        <a
-                            href={item.href}
+                        <Link
+                            to={item.href}
                             className={classNames(
                                 item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                 'rounded-md px-3 py-2 text-sm font-medium'
                             )}
                         >
                             {item.name}
-                        </a>
+                        </Link>
 
                         {/* Botão para abrir o menu */}
                         {item.hasMenu && (
@@ -52,13 +53,13 @@ export default function FlyMenu({ solutions = [], callsToAction = [], navigation
                                                 />
                                             </div>
                                             <div>
-                                                <a
-                                                    href={subItem.href}
+                                                <Link
+                                                    to={subItem.href}
                                                     className="font-semibold text-gray-900"
                                                 >
                                                     {subItem.name}
                                                     <span className="absolute inset-0" />
-                                                </a>
+                                                </Link>
                                                 <p className="mt-1 text-gray-600">
                                                     {subItem.description}
                                                 </p>
