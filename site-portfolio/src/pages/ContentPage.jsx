@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 // Importar suas imagens
 import Fagote from '../assets/fagote.jpeg'
 import Fo from '../assets/Ebaa.jpeg'
-import Pintura from '../assets/pintura.jpeg'
+import Pintura from '../assets/3d/pintura.jpeg'
 import Desenho from '../assets/desenho.jpeg'
 import Espelho from '../assets/espelho.jpg'
 

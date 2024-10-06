@@ -1,7 +1,7 @@
 import Eu from "../assets/eu.jpg"
 
 
-function About() {
+export default function About() {
     return (
         <div className="container p-4">
             <div className="d-flex justify-center gap-10">
@@ -12,4 +12,3 @@ function About() {
     );
 }
 
-export default About;
