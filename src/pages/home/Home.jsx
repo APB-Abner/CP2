@@ -1,6 +1,5 @@
 import Typewriter from "typewriter-effect";
 import { introdata } from "../../content_option";
-import { Link } from "react-router-dom";
 import Apenas from "../../assets/Ebaa.jpeg";
 
 export default function Home() {

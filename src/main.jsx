@@ -9,6 +9,7 @@ import About from './pages/About'
 import Hobbies from './pages/Hobbies'
 import PageNotFound from './pages/PageNotFound'
 import ContentPage from './pages/ContentPage';
+import Contact from './pages/Contact'
 
 const router = createBrowserRouter([
   {
