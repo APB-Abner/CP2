@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-const GLBViewer = ({ modelo }) => {
+const GLBViewer = ({ modelo,scale }) => {
   const mountRef = useRef(null); // Referência para o DOM onde será renderizada a cena
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const GLBViewer = ({ modelo }) => {
     renderer.setSize(clientWidth, clientHeight);
 
     // Adicionar controles de câmera
-    // const controls = new OrbitControls(camera, renderer.domElement);
+    const controls = new OrbitControls(camera, renderer.domElement);
 
     // Adicionar luz à cena
     const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -35,7 +35,7 @@ const GLBViewer = ({ modelo }) => {
       const model = gltf.scene;
 
       // Ajustar a escala do modelo
-      model.scale.set(0.015, 0.015, 0.015);
+      model.scale.set(scale, scale, scale);
 
       // Adicionar o modelo à cena
       scene.add(model);
@@ -60,7 +60,7 @@ const GLBViewer = ({ modelo }) => {
       const delta = clock.getDelta();
       if (mixer) mixer.update(delta); // Atualizar as animações
 
-      // controls.update(); // Atualizar controles
+      controls.update(); // Atualizar controles
       renderer.render(scene, camera); // Renderizar a cena
     };
     animate();
@@ -76,7 +76,11 @@ const GLBViewer = ({ modelo }) => {
     // Cleanup: remover o evento e o renderizador ao desmontar o componente
     return () => {
       window.removeEventListener('resize', handleResize);
-      mountRef.current.removeChild(renderer.domElement);
+
+      // Verifica se mountRef ainda existe antes de tentar remover o domElement
+      if (mountRef.current) {
+        mountRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
 

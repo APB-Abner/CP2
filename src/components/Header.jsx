@@ -2,52 +2,9 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon, PaintBrushIcon, PuzzlePieceIcon, MusicalNoteIcon, CameraIcon, ArrowPathRoundedSquareIcon, PencilIcon } from '@heroicons/react/24/outline'
 import FlyMenu from './FlyMenu'
+import navigation from '../data/navigation.js'
 
-const navigation = [
-    { name: 'Home', href: '/', current: true, hasMenu: false },
-    {
-        name: 'Works', href: 'works', current: false, hasMenu: true, subMenu: [
-            {
-                name: 'Música',
-                description: 'Uma longa jornada',
-                icon: MusicalNoteIcon,
-                href: 'music',
-            },
-            {
-                name: 'Games',
-                description: 'Um descobrimento',
-                icon: PuzzlePieceIcon,
-                href: 'game',
-            },
-            {
-                name: 'Fotografia',
-                description: 'Um trabalho',
-                icon: CameraIcon,
-                href: 'photo',
-            },
-            {
-                name: 'Pintura',
-                description: 'Uma arte',
-                icon: PaintBrushIcon,
-                href: 'paint',
-            },
-            {
-                name: 'Desenho',
-                description: 'Um amor',
-                icon: PencilIcon,
-                href: 'draw',
-            },
-            {
-                name: 'Treino',
-                description: 'Um orgulho',
-                icon: ArrowPathRoundedSquareIcon,
-                href: 'work',
-            },
-        ],
-    },
-    { name: 'Sobre', href: 'about', current: false, hasMenu: false },
-    { name: 'Contato', href: 'contact', current: false, hasMenu: false },
-]
+
 
 const solutions = [
 
@@ -76,7 +33,7 @@ export default function Header() {
                             <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
                         </DisclosureButton>
                     </div>
-                    <div className="flex flex-shrink-0 items-center justify-center">
+                    <div className="flex flex-shrink-0 items-center justify-end sm:justify-center">
                         <img
                             alt="Abner"
                             src="logo.svg"
