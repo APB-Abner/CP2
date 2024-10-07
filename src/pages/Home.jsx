@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
-import { introdata } from "../../content_option";
-import Apenas from "../../assets/Ebaa.jpeg";
+import { introdata } from "../content_option";
+import Apenas from "../assets/Ebaa.jpeg";
 
 export default function Home() {
 
