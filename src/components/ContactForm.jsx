@@ -16,8 +16,6 @@ export default function ContactForm() {
                 console.log(error.text);
                 alert('Ocorreu um erro ao enviar o e-mail.');
             });
-
-        // Limpa o formulário após o envio
         e.target.reset();
     };
 
