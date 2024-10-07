@@ -3,6 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon, PaintBrushIcon, PuzzlePieceIcon, MusicalNoteIcon, CameraIcon, ArrowPathRoundedSquareIcon, PencilIcon } from '@heroicons/react/24/outline'
 import FlyMenu from './FlyMenu'
 import navigation from '../data/navigation.js'
+import { Link } from 'react-router-dom'
 
 
 
@@ -49,10 +50,9 @@ export default function Header() {
             <DisclosurePanel className="sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     {navigation.map((item) => (
-                        <DisclosureButton
+                        <Link
                             key={item.name}
-                            as="a"
-                            href={item.href}
+                            to={item.href}
                             aria-current={item.current ? 'page' : undefined}
                             className={classNames(
                                 item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -60,7 +60,7 @@ export default function Header() {
                             )}
                         >
                             {item.name}
-                        </DisclosureButton>
+                        </Link>
                     ))}
                 </div>
             </DisclosurePanel>
