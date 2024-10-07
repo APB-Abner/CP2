@@ -5,9 +5,12 @@ import Modelo from '../components/Modelo';
 // Importar suas imagens
 import Fagote from '../assets/fagote.jpeg';
 import Fo from '../assets/Ebaa.jpeg';
+import CA from '../assets/CA.jpeg';
+import Bussula from '../assets/Bussula.jpeg';
 import Pintura from '../assets/pintura.jpeg';
 import Desenho from '../assets/desenho.jpeg';
 import Espelho from '../assets/espelho.jpg';
+import Rosto from '../assets/rosto.jpeg';
 
 // Configurar as informações de cada categoria
 const categoryData = {
@@ -28,51 +31,49 @@ const categoryData = {
             imageAlt: 'Imagem de outro instrumento musical'
         }
     ],
-    game: [
-        {
-            name: 'Games',
-            description: 'Um descobrimento no mundo dos games...',
-            type: 'image', // Tipo de conteúdo: imagem
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/home-page-02-edition-02.jpg',
-            imageAlt: 'Imagem de Games'
-        }
-    ],
     photo: [
         {
-            name: 'Fotografia',
-            description: 'Um trabalho criativo na fotografia...',
+            name: 'Casamento Alisson e Suellen',
+            description: 'Um casamento inesquecivel',
             type: 'image', // Tipo de conteúdo: imagem
-            imageSrc: Fo,
+            imageSrc: CA,
             imageAlt: 'Imagem de Fotografia'
         }
     ],
     paint: [
         {
-            name: 'Pintura',
-            description: 'A arte da pintura...',
+            name: 'O Homem sentado',
+            description: 'A arte da pintura de um homem sentado numa pedra',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Pintura,
             imageAlt: 'Imagem de Pintura'
-        }
+        },
+        {
+            name: 'O grande rosto',
+            description: 'A arte da pintura de um belo rosto',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: Rosto,
+            imageAlt: 'Imagem de Pintura'
+        },
     ],
     draw: [
         {
-            name: 'Desenho',
-            description: 'Um amor pelo desenho...',
+            name: 'Mapa',
+            description: 'Um mapa fantacioso',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Desenho,
-            imageAlt: 'Imagem de Desenho'
-        }
-    ],
-    work: [
+            imageAlt: 'Desenho de um mapa'
+        },
         {
-            name: 'Treino',
-            description: 'O orgulho no treino...',
+            name: 'Bússula',
+            description: 'Um desenho de uma bussula',
             type: 'image', // Tipo de conteúdo: imagem
-            imageSrc: Espelho,
-            imageAlt: 'Imagem de Treino'
-        }
-    ]
+            imageSrc: Bussula,
+            imageAlt: 'Desenho de uma bussula'
+        },
+    ],
+
+
 };
 
 function CategoryPage() {

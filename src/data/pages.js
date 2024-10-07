@@ -35,27 +35,6 @@ const callouts = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: 'draw',
     },
-    {
-        name: 'Treino',
-        description: 'Um orgulho',
-        imageSrc: Espelho,
-        imageAlt: 'Abner no espelho.',
-        href: 'work',
-    },
-    {
-        name: 'Familia',
-        description: 'Minha vida',
-        imageSrc: Vida,
-        imageAlt: 'Abner no espelho.',
-        href: 'familly',
-    },
-    {
-        name: 'Curso',
-        description: 'Um orgulho',
-        imageSrc: Cur,
-        imageAlt: 'Abner no espelho.',
-        href: 'work',
-    },
 ]
 
 
