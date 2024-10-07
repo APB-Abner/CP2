@@ -1,70 +1,9 @@
-import Espelho from '../assets/espelho.jpg'
-import Fagote from '../assets/fagote.jpeg'
-import Fo from '../assets/Ebaa.jpeg'
-import Pintura from '../assets/3d/pintura.jpeg'
-import Vida from '../assets/momo.jpeg'
-import Desenho from '../assets/desenho.jpeg'
-import Cur from '../assets/amamos_sono.jpg'
-import { Link } from 'react-router-dom'
 
-const callouts = [
-    {
-        name: 'Música',
-        description: 'Uma longa jornada',
-        imageSrc: Fagote,
-        imageAlt: 'Imagem Fagote',
-        href: 'music',
-    },
-    {
-        name: 'Games',
-        description: 'Um descobrimento',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/home-page-02-edition-02.jpg',
-        imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-        href: 'games',
-    },
-    {
-        name: 'Fotografia',
-        description: 'Um trabalho',
-        imageSrc: Fo,
-        imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: 'photo',
-    },
-    {
-        name: 'Pintura',
-        description: 'Uma arte',
-        imageSrc: Pintura,
-        imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: 'paint',
-    },
-    {
-        name: 'Desenho',
-        description: 'Um amor',
-        imageSrc: Desenho,
-        imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: 'draw',
-    },
-    {
-        name: 'Treino',
-        description: 'Um orgulho',
-        imageSrc: Espelho,
-        imageAlt: 'Abner no espelho.',
-        href: 'work',
-    },
-    {
-        name: 'Familia',
-        description: 'Minha vida',
-        imageSrc: Vida,
-        imageAlt: 'Abner no espelho.',
-        href: 'familly',
-    }, 
-    {
-        name: 'Curso',
-        description: 'Um orgulho',
-        imageSrc: Cur,
-        imageAlt: 'Abner no espelho.',
-        href: 'work',
-    },
-]
+import { Link } from 'react-router-dom'
+import callouts from '../data/pages'
+
+
+
 
 export default function Example() {
     return (

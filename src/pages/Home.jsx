@@ -2,6 +2,7 @@ import Typewriter from "typewriter-effect";
 import { introdata } from "../data/content_option";
 import Apenas from "../assets/Ebaa.jpeg";
 
+
 export default function Home() {
 
     return (
@@ -29,6 +30,7 @@ export default function Home() {
                 </div>
                 <div className="col-md-6 my-3">
                     <img className="rounded" src={Apenas} alt="Abner com câmera" />
+                
                 </div>
             </div>
         </div>
