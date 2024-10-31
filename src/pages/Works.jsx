@@ -4,7 +4,7 @@ import callouts from "../data/pages";
 export default function Works() {
     return (
         <>
-            <Category callouts ={callouts} />
+            <Category callouts={callouts} title='INTERESSES'/>
         </>
     );
 }

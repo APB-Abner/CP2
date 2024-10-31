@@ -4,7 +4,7 @@ import memory from "../data/memory";
 export default function Works() {
     return (
         <>
-            <Category callouts={memory} />
+            <Category callouts={memory} title='Memórias' />
         </>
     );
 }
