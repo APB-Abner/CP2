@@ -11,6 +11,7 @@ import PageNotFound from './pages/PageNotFound'
 import ContentPage from './pages/ContentPage';
 import Contact from './pages/Contact'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -18,11 +19,16 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
-      { path: 'works', element: <Works /> },
+      { path: 'interesses', element: <Works /> },
+      { path: 'inspirations', element: <Works /> },
+      { path: 'future', element: <Works /> },
+      { path: 'memory', element: <Works /> },
       { path: 'contact', element: <Contact /> },
       { path: '*', element: <PageNotFound /> },
       { path: ':name', element: <ContentPage /> }
     ]
+
+
   }
 ])
 

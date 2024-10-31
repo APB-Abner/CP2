@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon, PaintBrushIcon, PuzzlePieceIcon, Musica
 const navigation = [
     { name: 'Home', href: '/', current: true, hasMenu: false },
     {
-        name: 'Works', href: 'works', current: false, hasMenu: true, subMenu: [
+        name: 'Interesses', href: 'interesses', current: false, hasMenu: true, subMenu: [
             {
                 name: 'Música',
                 description: 'Uma longa jornada',
@@ -43,6 +43,9 @@ const navigation = [
             },
         ],
     },
+    { name: 'Memórias', href: 'memory', current: false, hasMenu: false },
+    { name: 'Inspirações', href: 'inspirations', current: false, hasMenu: false },
+    { name: 'Futuro', href: 'future', current: false, hasMenu: false },
     { name: 'Sobre', href: 'about', current: false, hasMenu: false },
     { name: 'Contato', href: 'contact', current: false, hasMenu: false },
 ]
