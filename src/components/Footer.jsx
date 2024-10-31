@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import navigation from "../data/navigation";
 
@@ -6,11 +5,11 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Footer({ }) {
+export default function Footer() {
     return ( 
         <>
-            <footer className="bottom-0 hidden md:flex bg-gray-800 text-white py-6">
-                <div className="container px-5">
+            <footer className="relative bottom-0 hidden md:flex bg-gray-800 text-white py-6">
+                <div className="container px-5 ">
                     <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between">
                         <ul className="my-0 flex space-x-4">
                                 {navigation.map((item) => (
