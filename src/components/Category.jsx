@@ -1,11 +1,11 @@
 
 import { Link } from 'react-router-dom'
-import callouts from '../data/pages'
 
 
 
 
-export default function Example() {
+
+export default function Example({callouts}) {
     return (
         <div className="bg-gray-100">
             <div className="d-flex mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
