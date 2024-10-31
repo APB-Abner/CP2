@@ -16,8 +16,8 @@ function classNames(...classes) {
 
 export default function Header() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
-            <div className="row mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
+        <Disclosure as="nav" className="bg-gray-800 sticky-top">
+            <div className="row mx-auto max-w-7xl px-2 md:px-6 lg:px-8 ">
                 <div className="d-flex h-16 items-center md:justify-between">
                     <div className="inset-y-0 left-2 flex max-h-max items-center md:hidden">
                         {/* Mobile menu button */}
