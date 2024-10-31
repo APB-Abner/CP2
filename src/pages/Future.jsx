@@ -1,10 +1,10 @@
 import Category from "../components/Category";
-import callouts from "../data/pages";
+import future from "../data/pages";
 
 export default function Works() {
     return (
         <>
-            <Category callouts ={callouts} />
+            <Category callouts ={future} />
         </>
     );
 }
