@@ -1,4 +1,4 @@
-import { Bars3Icon, BellIcon, XMarkIcon, PaintBrushIcon, PuzzlePieceIcon, MusicalNoteIcon, CameraIcon, ArrowPathRoundedSquareIcon, PencilIcon } from '@heroicons/react/24/outline'
+import { PaintBrushIcon, PuzzlePieceIcon, MusicalNoteIcon, CameraIcon, ArrowPathRoundedSquareIcon, PencilIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Home', href: '/', current: true, hasMenu: false },
@@ -44,28 +44,7 @@ const navigation = [
     },
     { name: 'Memórias', href: 'memory', current: false, hasMenu: false },
     { name: 'Inspirações', href: 'inspirations', current: false, hasMenu: false },
-    { name: 'Futuro', href: 'future', current: false, hasMenu: true , subMenu: [
-        
-        {
-            name: 'Curto prazo',
-            description: 'Uma longa jornada',
-            icon: Bars3Icon,
-            href: 'cp',
-        },
-        {
-            name: 'Médio prazo',
-            description: 'Uma longa jornada',
-            icon: XMarkIcon,
-            href: 'mp',
-        },
-        {
-            name: 'Longo prazo',
-            description: 'Uma longa jornada',
-            icon: BellIcon,
-            href: 'lp',
-        }
-
-    ]},
+    { name: 'Futuro', href: 'future', current: false, hasMenu: false },
     { name: 'Sobre', href: 'about', current: false, hasMenu: false },
     { name: 'Contato', href: 'contact', current: false, hasMenu: false },
 ]
