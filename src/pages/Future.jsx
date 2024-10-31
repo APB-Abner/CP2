@@ -1,5 +1,5 @@
 import Category from "../components/Category";
-import future from "../data/pages";
+import future from "../data/future";
 
 export default function Works() {
     return (
