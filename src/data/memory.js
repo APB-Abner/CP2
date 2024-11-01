@@ -1,31 +1,31 @@
-import A1 from '../assets/1.png'
-import A2 from '../assets/2.png'
-import A3 from '../assets/3.png'
+import M1 from '../assets/m1.jpg'
+import ME from '../assets/me.jpg'
+import AC from '../assets/ac.jpg'
 
-const future = [
+const memory = [
     
     {
-        name: 'Curto prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A1,
+        name: 'Descobertas na Música',
+        description: 'Uma memória que me deu direção',
+        imageSrc: M1,
         imageAlt: 'Imagem futuro curto',
-        href: 'cp',
+        href: 'mi',
     },
     {
-        name: 'Médio prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A2,
+        name: 'Ensino Médio',
+        description: 'Memórias de superação e responsabilidade',
+        imageSrc: ME,
         imageAlt: 'Imagem futuro médio',
-        href: 'mp',
+        href: 'me',
     },
     {
-        name: 'Longo prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A3,
+        name: 'Autoconhecimento',
+        description: 'Descobertas novas',
+        imageSrc: AC,
         imageAlt: 'Imagem futuro longo',
-        href: 'lp',
+        href: 'ac',
     }
 ]
 
 
-export default future
+export default memory

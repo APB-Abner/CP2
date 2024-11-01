@@ -20,11 +20,11 @@ export default function Example({callouts, title}) {
                                             className="h-full w-full object-cover object-center"
                                         />
                                     </div>
-                                    <h3 className="mt-6 text-sm text-gray-500">
+                                    <h3 className="mt-6 text-base font-semibold text-gray-900 ">
                                         <span className="absolute inset-0" />
                                         {callout.name}
                                     </h3>
-                                    <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                                    <p className="text-sm text-gray-500">{callout.description}</p>
                                 </Link>
                             </div>
                         ))}
