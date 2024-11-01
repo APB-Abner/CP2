@@ -146,7 +146,7 @@ const categoryData = {
     cbum: [
         {
             name: 'Chris Bumstead',
-            description: 'CBum (Chris Bumstead) ',
+            description: 'Com seis títulos de Mr. Olympia, CBum (Chris Bumstead) superou desafios de saúde e momentos difíceis, mostrando que com dedicação e uma mentalidade forte é possível alcançar grandes conquistas. ',
             type: 'image',
             imageSrc: CB,
             imageAlt: 'Imagem de CBum'
