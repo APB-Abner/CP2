@@ -1,31 +1,50 @@
 import A1 from '../assets/1.png'
 import A2 from '../assets/2.png'
 import A3 from '../assets/3.png'
+import Cellbit from '../assets/cellbit.jpg'
+import CB from '../assets/CB.jpg'
+import GABI from '../assets/GABI.jpg'
+import EINSTEIN from '../assets/EINSTEIN.jpg'
+import RIORDAN from '../assets/RIORDAN.jpg'
 
-const future = [
+const inspirations = [
     
     {
-        name: 'Curto prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A1,
-        imageAlt: 'Imagem futuro curto',
-        href: 'cp',
+        name: 'Rick Riordan',
+        description: 'Escritor de Fantasia e Mitos Modernos',
+        imageSrc: RIORDAN,
+        imageAlt: '',
+        href: 'riordan',
     },
     {
-        name: 'Médio prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A2,
+        name: 'Cellbit',
+        description: 'Escritor, streamer e youtuber',
+        imageSrc: Cellbit,
+        imageAlt: '',
+        href: 'cellbit',
+    },
+    {
+        name: 'Gabriela Araújo',
+        description: 'Atriz, Apresentadora e Poetisa',
+        imageSrc: GABI,
         imageAlt: 'Imagem futuro médio',
-        href: 'mp',
+        href: 'gabiisteca',
     },
     {
-        name: 'Longo prazo',
-        description: 'Uma longa jornada',
-        imageSrc: A3,
+        name: 'Albert Einstein',
+        description: 'Físico Teórico e Filósofo da Ciência',
+        imageSrc: EINSTEIN,
+        imageAlt: 'Imagem futuro médio',
+        href: 'einstein',
+    },
+    {
+        name: 'Chris Bumstead',
+        description: 'Fisiculturista profissional',
+        imageSrc: CB,
         imageAlt: 'Imagem futuro longo',
-        href: 'lp',
+        href: 'cbum',
     }
 ]
 
 
-export default future
+export default inspirations

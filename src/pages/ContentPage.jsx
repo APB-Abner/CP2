@@ -14,6 +14,11 @@ import A3 from '../assets/3.png'
 import M1 from '../assets/m1.jpg'
 import ME from '../assets/me.jpg'
 import AC from '../assets/ac.jpg'
+import Cellbit from '../assets/cellbit.jpg'
+import CB from '../assets/CB.jpg'
+import GABI from '../assets/GABI.jpg'
+import EINSTEIN from '../assets/EINSTEIN.jpg'
+import RIORDAN from '../assets/RIORDAN.jpg'
 
 // Configurar as informações de cada categoria
 const categoryData = {
@@ -128,7 +133,53 @@ const categoryData = {
             imageSrc: AC,
             imageAlt: 'Imagem futuro longo'
         }
+    ],
+    cellbit: [
+        {
+            name: 'Cellbit',
+            description: 'Cellbit se destaca por transformar jogos em experiências envolventes, conectando-se de forma autêntica com seu público e criando uma comunidade unida ao redor de suas narrativas. Sua habilidade de abordar temas complexos com leveza é uma de suas marcas registradas.',
+            type: 'image',
+            imageSrc: Cellbit,
+            imageAlt: 'Imagem de Cellbit'
+        }
+    ],
+    cbum: [
+        {
+            name: 'Chris Bumstead',
+            description: 'CBum (Chris Bumstead) ',
+            type: 'image',
+            imageSrc: CB,
+            imageAlt: 'Imagem de CBum'
+        }
+    ],
+    gabiisteca: [
+        {
+            name: 'Atriz, Apresentadora e Poetisa',
+            description: 'Gabriela Araújo (Gabiisteca), combina seu talento nas artes cênicas com a escrita poética. Sua autenticidade e sensibilidade ao abordar emoções profundas a tornam uma inspiração, refletindo vulnerabilidade e força em suas obras.',
+            type: 'image',
+            imageSrc: GABI,
+            imageAlt: 'Imagem de Gabiisteca'
+        }
+    ],
+    einstein: [
+        {
+            name: 'Físico Teórico e Filósofo da Ciência',
+            description: 'Albert Einstein é lembrado não apenas por suas contribuições científicas, mas também por sua capacidade de questionar a realidade e estimular o pensamento crítico. Sua curiosidade insaciável e paixão pelo conhecimento continuam a inspirar gerações.',
+            type: 'image',
+            imageSrc: EINSTEIN,
+            imageAlt: 'Imagem de Albert Einstein'
+        }
+    ],
+    riordan: [
+        {
+            name: 'Escritor de Fantasia e Mitos Modernos',
+            description: 'Rick Riordan é um mestre em trazer mitologia antiga para o público contemporâneo, especialmente jovens leitores. Suas histórias cativantes e personagens carismáticos ensinam lições valiosas sobre coragem e amizade.',
+            type: 'image',
+            imageSrc: RIORDAN,
+            imageAlt: 'Imagem de Rick Riordan'
+        }
     ]
+
 
 
 };
