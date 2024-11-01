@@ -208,10 +208,10 @@ function CategoryPage() {
                                 <h1 className="text-3xl font-bold text-gray-900">
                                     {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
                                 </h1>
-                                <div className={`flex flex-col sm:flex-row ${categoryItems.length === 1 ? 'justify-center items-center gap-4' : ''} mt-6 w-full`}>
+                                <div className={`flex-col sm:flex-row ${categoryItems.length === 1 ? 'flex justify-center items-center gap-4 ' : ""}mt-6 w-full bg-white p-4 rounded-lg shadow-md`}>
                                     {/* Condicional para verificar se é imagem ou 3D */}
                                     {item.type === 'image' ? (
-                                        <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white">
+                                        <div className="max-w-max h-64 bg-gray-200 rounded-lg overflow-hidden">
                                             <img
                                                 src={item.imageSrc}
                                                 alt={item.imageAlt}
@@ -228,7 +228,6 @@ function CategoryPage() {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </div>
