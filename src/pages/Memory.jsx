@@ -1,10 +1,10 @@
 import Category from "../components/Category";
-import callouts from "../data/pages";
+import memory from "../data/memory";
 
 export default function Works() {
     return (
         <>
-            <Category callouts={callouts} title='INTERESSES'/>
+            <Category callouts={memory} title='Memórias' />
         </>
     );
 }

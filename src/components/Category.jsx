@@ -1,16 +1,13 @@
+/* eslint-disable react/prop-types */
 
 import { Link } from 'react-router-dom'
-import callouts from '../data/pages'
 
-
-
-
-export default function Example() {
+export default function Example({callouts, title}) {
     return (
         <div className="bg-gray-100">
             <div className="d-flex mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h2 className="text-2xl font-bold text-gray-900">O Abner</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
 
                     <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:gap-y-3 lg:space-y-0">
                         {callouts.map((callout) => (
@@ -23,11 +20,11 @@ export default function Example() {
                                             className="h-full w-full object-cover object-center"
                                         />
                                     </div>
-                                    <h3 className="mt-6 text-sm text-gray-500">
+                                    <h3 className="mt-6 text-base font-semibold text-gray-900 ">
                                         <span className="absolute inset-0" />
                                         {callout.name}
                                     </h3>
-                                    <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                                    <p className="text-sm text-gray-500">{callout.description}</p>
                                 </Link>
                             </div>
                         ))}

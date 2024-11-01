@@ -1,30 +1,38 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import Modelo from '../components/Modelo';
 
 // Importar suas imagens
 import Fagote from '../assets/fagote.jpeg';
-import Fo from '../assets/Ebaa.jpeg';
 import CA from '../assets/CA.jpeg';
 import Bussula from '../assets/Bussula.jpeg';
 import Pintura from '../assets/pintura.jpeg';
 import Desenho from '../assets/desenho.jpeg';
-import Espelho from '../assets/espelho.jpg';
 import Rosto from '../assets/rosto.jpeg';
+import A1 from '../assets/1.png'
+import A2 from '../assets/2.png'
+import A3 from '../assets/3.png'
+import M1 from '../assets/m1.jpg'
+import ME from '../assets/me.jpg'
+import AC from '../assets/ac.jpg'
+import Cellbit from '../assets/cellbit.jpg'
+import CB from '../assets/CB.jpg'
+import GABI from '../assets/GABI.jpg'
+import EINSTEIN from '../assets/einstein.jpg'
+import RIORDAN from '../assets/RIORDAN.jpg'
 
 // Configurar as informações de cada categoria
 const categoryData = {
     music: [
         {
             name: 'Fagote',
-            description: 'Instrumento preferido',
+            description: 'O som profundo e complexo do fagote me conquistou desde a primeira vez que ouvi. Ele traz uma atmosfera única, que é ao mesmo tempo poderosa e introspectiva, e, por isso, se tornou meu instrumento favorito. É quase como se eu pudesse expressar camadas da minha própria personalidade através dele.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Fagote,
             imageAlt: 'Imagem de Fagote'
         },
         {
             name: 'Oboé',
-            description: '2° instrumento preferido',
+            description: 'Meu segundo instrumento preferido, o oboé, tem uma sonoridade clara e emocional que me conecta a ele em um nível diferente. A expressão que ele proporciona é intensa e delicada ao mesmo tempo, o que o torna perfeito para músicas introspectivas e emocionantes.',
             type: '3d', // Tipo de conteúdo: imagem
             imageSrc: '/oboe.glb',
             scale: 5,
@@ -34,7 +42,7 @@ const categoryData = {
     photo: [
         {
             name: 'Casamento Alisson e Suellen',
-            description: 'Um casamento inesquecivel',
+            description: 'Este casamento foi um momento inesquecível, e a fotografia me permitiu capturar a beleza e a emoção daquela ocasião. Amo a fotografia por me dar essa habilidade de guardar e compartilhar momentos especiais, como esse, que carregam tanto significado.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: CA,
             imageAlt: 'Imagem de Fotografia'
@@ -43,14 +51,14 @@ const categoryData = {
     paint: [
         {
             name: 'O Homem sentado',
-            description: 'A arte da pintura de um homem sentado numa pedra',
+            description: 'Gosto de explorar a simplicidade e complexidade das emoções humanas, e este quadro representa bem isso. Pintar algo aparentemente simples, como um homem sentado, me faz refletir sobre a complexidade que existe em cada pessoa, cada gesto, cada momento de pausa.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Pintura,
             imageAlt: 'Imagem de Pintura'
         },
         {
             name: 'O grande rosto',
-            description: 'A arte da pintura de um belo rosto',
+            description: 'A ideia de pintar um rosto traz um fascínio pela forma humana e suas expressões. Esse rosto é um pouco de mim mesmo e um pouco de todas as pessoas que cruzaram meu caminho. É um tema que sempre me inspira e me conecta à essência das relações humanas.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Rosto,
             imageAlt: 'Imagem de Pintura'
@@ -59,19 +67,119 @@ const categoryData = {
     draw: [
         {
             name: 'Mapa',
-            description: 'Um mapa fantacioso',
+            description: 'Desenhar mapas é como criar novos mundos e cenários onde a imaginação não tem limites. Adoro essa ideia de inventar lugares, distantes ou próximos, e de detalhá-los como se realmente existissem, me permite explorar a fantasia e a possibilidade.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Desenho,
             imageAlt: 'Desenho de um mapa'
         },
         {
             name: 'Bússula',
-            description: 'Um desenho de uma bussula',
+            description: 'O desenho de uma bússola é um símbolo de busca e orientação, algo que acho essencial para qualquer jornada criativa e pessoal. É um lembrete de que, mesmo no caminho artístico, sempre buscamos algo – talvez uma nova ideia, talvez um propósito.',
             type: 'image', // Tipo de conteúdo: imagem
             imageSrc: Bussula,
             imageAlt: 'Desenho de uma bussula'
         },
     ],
+    cp: [
+        {
+            name: 'Curto prazo',
+            description: 'No curto prazo, planejo me aprofundar em habilidades de design e programação para melhorar meus projetos, como o site de customização de carros em 3D que estou desenvolvendo. Quero terminar com um site completo e interativo.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A1,
+            imageAlt: 'Imagem futuro curto'
+        },
+    ],
+    mp: [
+        {
+            name: 'Médio prazo',
+            description: 'No médio prazo, pretendo me aprofundar em programação e dados, quero entender melhor a área de BI e como impactar na soluçãoes atraves disso.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A2,
+            imageAlt: 'Imagem futuro médio'
+        },
+    ],
+    lp: [
+        {
+            name: 'Longo prazo',
+            description: 'No longo prazo, pretendo me tornar um desenvolvedor full-stack e trabalhar em projetos de tecnologia que tenham impacto positivo na sociedade. Quero criar soluções inovadoras e acessíveis para problemas reais.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A3,
+            imageAlt: 'Imagem futuro longo'
+        },
+    ],
+    mi: [
+        {
+            name: 'Descobertas na Música',
+            description: 'Aprender a tocar múltiplos instrumentos foi libertador e transformador. Cada um deles me trouxe diferentes perspectivas e sensações, fazendo com que eu me entendesse melhor.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: M1,
+            imageAlt: 'Imagem fagote com partituras atrás'
+        }
+    ],
+    me: [
+        {
+            name: 'Mudança de Ambiente e Ensino Médio',
+            description: 'Ter a oportunidade de representar uma turma como representante foi um desafio e uma conquista pessoal. Isso me ajudou a perceber o valor de ser um bom líder e de escutar as pessoas.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: ME,
+            imageAlt: 'Imagem futuro longo'
+        }
+    ],
+    ac: [
+        {
+            name: 'Descoberta do Autoconhecimento',
+            description: 'Conhecer mais sobre TDAH e autocompreensão foram passos essenciais na minha jornada de autoconhecimento. A partir disso, pude entender melhor meus limites e potenciais.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: AC,
+            imageAlt: 'Imagem futuro longo'
+        }
+    ],
+    cellbit: [
+        {
+            name: 'Cellbit',
+            description: 'Cellbit se destaca por transformar jogos em experiências envolventes, conectando-se de forma autêntica com seu público e criando uma comunidade unida ao redor de suas narrativas. Sua habilidade de abordar temas complexos com leveza é uma de suas marcas registradas.',
+            type: 'image',
+            imageSrc: Cellbit,
+            imageAlt: 'Imagem de Cellbit'
+        }
+    ],
+    cbum: [
+        {
+            name: 'Chris Bumstead',
+            description: 'CBum (Chris Bumstead) ',
+            type: 'image',
+            imageSrc: CB,
+            imageAlt: 'Imagem de CBum'
+        }
+    ],
+    gabiisteca: [
+        {
+            name: 'Atriz, Apresentadora e Poetisa',
+            description: 'Gabriela Araújo (Gabiisteca), combina seu talento nas artes cênicas com a escrita poética. Sua autenticidade e sensibilidade ao abordar emoções profundas a tornam uma inspiração, refletindo vulnerabilidade e força em suas obras.',
+            type: 'image',
+            imageSrc: GABI,
+            imageAlt: 'Imagem de Gabiisteca'
+        }
+    ],
+    einstein: [
+        {
+            name: 'Físico Teórico e Filósofo da Ciência',
+            description: 'Albert Einstein é lembrado não apenas por suas contribuições científicas, mas também por sua capacidade de questionar a realidade e estimular o pensamento crítico. Sua curiosidade insaciável e paixão pelo conhecimento continuam a inspirar gerações.',
+            type: 'image',
+            imageSrc: EINSTEIN,
+            imageAlt: 'Imagem de Albert Einstein'
+        }
+    ],
+    riordan: [
+        {
+            name: 'Escritor de Fantasia e Mitos Modernos',
+            description: 'Rick Riordan é um mestre em trazer mitologia antiga para o público contemporâneo, especialmente jovens leitores. Suas histórias cativantes e personagens carismáticos ensinam lições valiosas sobre coragem e amizade.',
+            type: 'image',
+            imageSrc: RIORDAN,
+            imageAlt: 'Imagem de Rick Riordan'
+        }
+    ]
+
 
 
 };
@@ -93,35 +201,38 @@ function CategoryPage() {
         <div className="bg-gray-100">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h1 className="text-3xl font-bold text-gray-900">{name.charAt(0).toUpperCase() + name.slice(1)}</h1>
-                    <div className="mt-6 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                    {/* Verificação para ajuste de colunas com base na quantidade de items */}
+                    <div className={`grid ${categoryItems.length === 1 ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'} gap-y-12 gap-x-8`}>
                         {categoryItems.map((item, index) => (
                             <div key={index} className="group relative">
-                                {/* Condicional para verificar se é imagem ou 3D */}
-                                {item.type === 'image' ? (
-                                    <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                                        <img
-                                            src={item.imageSrc}
-                                            alt={item.imageAlt}
-                                            className="w-full h-full object-cover object-center"
-                                        />
-                                    </div>
-                                ) : (
-                                    <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                                        <Modelo
-                                        modelo={item.imageSrc}
-                                        scale={item.scale}
-                                        />
-                                    </div>
-                                )}
-                                <h3 className="mt-4 text-lg font-semibold text-gray-900">{item.name}</h3>
-                                <p className="mt-2 text-gray-600">{item.description}</p>
+                                <h1 className="text-3xl font-bold text-gray-900">
+                                    {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                                </h1>
+                                <div className={`flex flex-col sm:flex-row ${categoryItems.length === 1 ? 'justify-center items-center gap-4' : ''} mt-6 w-full`}>
+                                    {/* Condicional para verificar se é imagem ou 3D */}
+                                    {item.type === 'image' ? (
+                                        <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white">
+                                            <img
+                                                src={item.imageSrc}
+                                                alt={item.imageAlt}
+                                                className="h-full w-full object-cover object-center"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                                            <Modelo modelo={item.imageSrc} scale={item.scale} />
+                                        </div>
+                                    )}
+                                    <p className="mt-2 text-gray-600">{item.description}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
         </div>
+
     );
 }
 
