@@ -1,16 +1,16 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import Modelo from '../components/Modelo';
 
 // Importar suas imagens
 import Fagote from '../assets/fagote.jpeg';
-import Fo from '../assets/Ebaa.jpeg';
 import CA from '../assets/CA.jpeg';
 import Bussula from '../assets/Bussula.jpeg';
 import Pintura from '../assets/pintura.jpeg';
 import Desenho from '../assets/desenho.jpeg';
-import Espelho from '../assets/espelho.jpg';
 import Rosto from '../assets/rosto.jpeg';
+import A1 from '../assets/1.png'
+import A2 from '../assets/2.png'
+import A3 from '../assets/3.png'
 
 // Configurar as informações de cada categoria
 const categoryData = {
@@ -72,6 +72,33 @@ const categoryData = {
             imageAlt: 'Desenho de uma bussula'
         },
     ],
+    cp: [
+        {
+            name: 'Curto prazo',
+            description: 'No curto prazo, planejo me aprofundar em habilidades de design e programação para melhorar meus projetos, como o site de customização de carros em 3D que estou desenvolvendo. Quero terminar com um site completo e interativo.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A1,
+            imageAlt: 'Imagem futuro curto'
+        },
+    ],
+    mp: [
+        {
+            name: 'Médio prazo',
+            description: 'No médio prazo, pretendo me aprofundar em programação e dados, quero entender melhor a área de BI e como impactar na soluçãoes atraves disso.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A2,
+            imageAlt: 'Imagem futuro médio'
+        },
+    ],
+    lp: [
+        {
+            name: 'Longo prazo',
+            description: 'No longo prazo, pretendo me tornar um desenvolvedor full-stack e trabalhar em projetos de tecnologia que tenham impacto positivo na sociedade. Quero criar soluções inovadoras e acessíveis para problemas reais.',
+            type: 'image', // Tipo de conteúdo: imagem
+            imageSrc: A3,
+            imageAlt: 'Imagem futuro longo'
+        },
+    ]
 
 
 };
@@ -93,35 +120,37 @@ function CategoryPage() {
         <div className="bg-gray-100">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h1 className="text-3xl font-bold text-gray-900">{name.charAt(0).toUpperCase() + name.slice(1)}</h1>
-                    <div className="mt-6 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                    {/* Verificação para ajuste de colunas com base na quantidade de items */}
+                    <div className={`grid ${categoryItems.length === 1 ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'} gap-y-12 gap-x-8`}>
                         {categoryItems.map((item, index) => (
                             <div key={index} className="group relative">
-                                {/* Condicional para verificar se é imagem ou 3D */}
-                                {item.type === 'image' ? (
-                                    <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                                        <img
-                                            src={item.imageSrc}
-                                            alt={item.imageAlt}
-                                            className="w-full h-full object-cover object-center"
-                                        />
-                                    </div>
-                                ) : (
-                                    <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                                        <Modelo
-                                        modelo={item.imageSrc}
-                                        scale={item.scale}
-                                        />
-                                    </div>
-                                )}
-                                <h3 className="mt-4 text-lg font-semibold text-gray-900">{item.name}</h3>
-                                <p className="mt-2 text-gray-600">{item.description}</p>
+                                <h1 className="text-3xl font-bold text-gray-900">
+                                    {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                                </h1>
+                                <div className={`${categoryItems.length === 1 ? 'd-flex justify-center items-center gap-4 ': "" }mt-6 w-full bg-white p-4 rounded-lg shadow-md`}>
+                                    {/* Condicional para verificar se é imagem ou 3D */}
+                                    {item.type === 'image' ? (
+                                        <div className= "max-h-min h-64 bg-gray-200 rounded-lg overflow-hidden">
+                                            <img
+                                                src={item.imageSrc}
+                                                alt={item.imageAlt}
+                                                className="h-full object-cover object-center"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                                            <Modelo modelo={item.imageSrc} scale={item.scale} />
+                                        </div>
+                                    )}
+                                    <p className="mt-2 text-gray-600">{item.description}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
         </div>
+
     );
 }
 
