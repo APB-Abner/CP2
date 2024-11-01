@@ -17,7 +17,7 @@ import AC from '../assets/ac.jpg'
 import Cellbit from '../assets/cellbit.jpg'
 import CB from '../assets/CB.jpg'
 import GABI from '../assets/GABI.jpg'
-import EINSTEIN from '../assets/EINSTEIN.jpg'
+import EINSTEIN from '../assets/einstein.jpg'
 import RIORDAN from '../assets/RIORDAN.jpg'
 
 // Configurar as informações de cada categoria
